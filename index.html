@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sehat Path — Certified Dietitian & Nutritionist</title>
+  <meta name="description" content="Sehat Path — personalized nutrition, meal plans, and expert dietitian consultations." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Sehat Path</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-primary" id="bookBtn">Book</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Nutrition that fits your life.</h1>
+          <p class="lead">Personalized meal plans, evidence-based guidance, and ongoing support from a certified dietitian and nutritionist.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" id="getStarted">Get Started</a>
+            <a class="btn btn-ghost" href="#calculator">Try BMI Calculator</a>
+          </div>
+          <ul class="hero-features">
+            <li>Individualized meal plans</li>
+            <li>Medical nutrition therapy</li>
+            <li>Weight management & sports nutrition</li>
+          </ul>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1543352634-6b6e86aed2c3?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f0b0f2f7f3c85a1b6f07e7d5b0fae88" alt="Healthy food and consultation" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container services" id="services">
+      <h2>Services</h2>
+      <p class="section-sub">Holistic, evidence-based nutrition services tailor-made for you.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>1:1 Consultations</h3>
+          <p>Comprehensive assessment, goal-setting, and a sustainable plan you'll actually follow.</p>
+        </article>
+        <article class="card">
+          <h3>Personalized Meal Plans</h3>
+          <p>Meal plans with grocery lists and recipes tailored to preferences, allergies, and lifestyle.</p>
+        </article>
+        <article class="card">
+          <h3>Specialized Programs</h3>
+          <p>Diabetes, PCOS, weight management, sports nutrition, and clinical conditions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container calculator" id="calculator">
+      <h2>BMI & Nutrition Calculator</h2>
+      <p class="section-sub">Quick tools to estimate BMI and daily calorie range (approx.).</p>
+      <div class="calc-grid">
+        <div class="bmi-box">
+          <h3>BMI Calculator</h3>
+          <label>Weight
+            <input type="number" id="weight" placeholder="kg" min="1" />
+          </label>
+          <label>Height
+            <input type="number" id="height" placeholder="cm" min="1" />
+          </label>
+          <button class="btn" id="calcBMI">Calculate BMI</button>
+          <p id="bmiResult" class="muted"></p>
+        </div>
+
+        <div class="calorie-box">
+          <h3>Estimated Calorie Needs</h3>
+          <label>Age
+            <input type="number" id="age" placeholder="years" min="1" />
+          </label>
+          <label>Sex
+            <select id="sex">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </label>
+          <label>Activity
+            <select id="activity">
+              <option value="1.2">Sedentary</option>
+              <option value="1.375">Light</option>
+              <option value="1.55">Moderate</option>
+              <option value="1.725">Active</option>
+              <option value="1.9">Very active</option>
+            </select>
+          </label>
+          <button class="btn" id="calcCalories">Estimate Calories</button>
+          <p id="calorieResult" class="muted"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About Sehat Path</h2>
+      <p class="section-sub">Hi — I'm [Your Name], a certified dietitian and nutritionist. I help clients achieve sustainable health through personalized plans grounded in science.</p>
+      <div class="about-grid">
+        <div>
+          <h3>Credentials</h3>
+          <ul>
+            <li>Registered Dietitian / Licensed Nutritionist</li>
+            <li>Specialized certifications (e.g., diabetes education, sports nutrition)</li>
+            <li>Experience with clinical & community settings</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Approach</h3>
+          <p>Evidence-based, practical, and compassionate. We create plans you can stick with — no fad diets, just real food and manageable habits.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container meal" id="meal">
+      <h2>Sample 1-Day Meal Plan</h2>
+      <div class="meal-card">
+        <h3>Balanced Day — ~1800 kcal (example)</h3>
+        <ul>
+          <li>Breakfast: Oats with milk, berries, and walnuts</li>
+          <li>Mid-morning: Greek yogurt + fruit</li>
+          <li>Lunch: Grilled chicken salad with quinoa and veggies</li>
+          <li>Snack: Carrot sticks and hummus</li>
+          <li>Dinner: Baked fish, brown rice, steamed greens</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container testimonials" id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="cards">
+        <blockquote class="card">
+          <p>"Working with [Your Name] changed how I approach food — sustainable and realistic."</p>
+          <cite>— A happy client</cite>
+        </blockquote>
+        <blockquote class="card">
+          <p>"Clear guidance, great meal ideas, and supportive follow-up."</p>
+          <cite>— Another client</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact & Book an Appointment</h2>
+      <p class="section-sub">Fill the form below to request an appointment. Replace the Formspree endpoint in the HTML/JS with your backend if you have one.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label>Full name
+          <input type="text" name="name" id="cname" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" id="cemail" required />
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" id="cphone" />
+        </label>
+        <label>Preferred date & time
+          <input type="datetime-local" name="datetime" id="cdatetime" />
+        </label>
+        <label>Brief message
+          <textarea name="message" id="cmessage" rows="4"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send Request</button>
+        <p id="formStatus" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sehat Path. All rights reserved.</p>
+      <nav class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Booking modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <h3 id="modalTitle">Book a Consultation</h3>
+      <form id="bookingForm">
+        <label>Your name<input type="text" id="bname" required></label>
+        <label>Email<input type="email" id="bemail" required></label>
+        <label>Preferred date & time<input type="datetime-local" id="bdatetime"></label>
+        <label>Notes<textarea id="bnotes" rows="3"></textarea></label>
+        <button class="btn btn-primary" type="submit">Request Booking</button>
+        <p id="bookingStatus" class="muted"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
